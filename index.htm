@@ -6,7 +6,9 @@
     <title>Vercel CI/CD Demo</title>
   </head>
   <body>
-    <h1>Welcome to Vercel CI/CD Demo</h1>
+    <h1>Welcome to Vercel CI/CD Demo</h1> <p>Your secret key is: <span 
+        id="secretKey"></span></p> <script> const secretKey = process.env.MY_SECRET_KEY; 
+        document.getElementById("secretKey").textContent = secretKey; </script>
     <script src="config.js"></script> 
   </body>
 </html>
